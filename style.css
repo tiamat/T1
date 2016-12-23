@@ -1,0 +1,182 @@
+/*
+ * Stylesheet for tiamat.name
+ * 
+ * tab width:	4 spaces
+ * author: 		Evzhenkov Svyatoslav
+ * date: 		august 2010 - 2011
+ */			
+html{
+	
+}
+ 
+body{
+	margin: 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	min-width: 770px;
+	text-align:center;
+}
+strong, h4, h5, h6, b{ /*make them same as <p> element*/
+	margin-top: 7px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+h1{
+	font-family:"Courier New", Courier, monospace;, Courier, monospace;
+	font-weight:normal;
+	font-size: 24px;
+}
+h2{
+	font-family:"Courier New", Courier, monospace;
+	font-size: 21px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+h2 + p{
+	margin-top: 1px;
+}
+
+h3{
+	font-family:"Courier New", Courier, monospace;
+	font-size: 18px;
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+h3 + p{
+	margin-top: 1px;
+}
+
+blockquote{
+	border-left: 1px solid #000000;
+	padding-left: 10px;
+}
+
+img{
+	border: none;
+}
+
+img.small{ /* small image or favicon */
+	float: right;
+	text-align:right;
+	margin: 10px 0px 10px 10px;
+	display: block;
+}
+img.fullcontext{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+textarea, input{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+table, th, td{
+	border: 1px solid #555;
+	border-collapse: collapse;
+	padding: 3px;
+}
+
+#wrapper{
+	align:center;
+	margin: 0px auto;
+	width: 820px;
+	
+}
+
+#navigation{
+	background-color:#ffffff;
+	width: 150px;
+	padding: 30px 10px 10px 10px;
+	text-align: center;
+	position:relative;
+	float:left;
+}
+#navigation_categories ul, #navigation_categories li{
+	padding:0px;
+	margin:0px;
+	list-style-type: none;
+	list-style:none;
+	text-align: center;	
+	margin-top: 3px;
+}
+#navigation_categories a:link, #navigation_categories a:active, #navigation_categories a:visited {
+	/*display: block;*/
+	text-align: center;
+}
+
+#navigation_categories a:hover{
+	width: 100%;
+	/*display: block;*/
+ 	text-decoration: none; 
+	text-align: center;
+}
+
+#content{
+	position:relative;
+	float: left;
+	padding: 20px;
+	width: 600px;
+	text-align:left;
+}
+
+#content a, #content a:focus, #content a:active, #content a:link {
+	text-decoration: underline;
+}
+
+#content a:visited{
+	text-decoration: underline;
+}
+
+#content a:hover{
+	text-decoration: none;
+}
+
+#credentials, #credentials a{
+	font-family: "Courier New", Courier, monospace;
+	font-size: 8px;
+	color: #555;
+	line-height: 9px;
+	margin-top: 20px;
+}
+
+#nav-above{
+	margin-bottom: 20px;
+}
+
+#t1_tl{
+	width: 100px;
+	height: 90px;
+	margin-left: 25px;
+}
+
+.cat-item{
+	margin: 2px 0px 2px 0px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	letter-spacing: 1px;
+}
+
+
+.entry-meta{
+	text-align: right;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10px;
+	line-height: 13px;
+	margin-bottom: 30px;
+}
+.entry-meta p{
+	margin: 0px 0px 3px 0px;
+}
+.post-date {
+	color: #555;
+}
+.nav-previous {
+	float:left;
+}
+.nav-next {
+	float: right;
+}

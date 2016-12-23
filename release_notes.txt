@@ -1,0 +1,9 @@
+Version 0.1.1 (8 sep 2010)
+- openID delegate added to header
+- minor CSS fixes
+
+Version 0.1. (10 aug 2010)
+- Stylesheets and layout applied
+- Index is fully designed. 
+- Single.php is fully designed and tested.
+- Navigation sidebar designed  
