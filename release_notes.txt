@@ -1,3 +1,5 @@
+V 0.7 (Dec 2016)
+
 Version 0.1.1 (8 sep 2010)
 - openID delegate added to header
 - minor CSS fixes

@@ -54,6 +54,7 @@ blockquote{
 
 img{
 	border: none;
+	max-width: 100%;
 }
 
 img.small{ /* small image or favicon */

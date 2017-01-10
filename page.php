@@ -15,6 +15,16 @@
 <?php edit_post_link( __( 'Edit', 'sandbox' ), '<span class="edit-link">', '</span>' ) ?>
 
 				</div>
+				<div class="entry-meta">
+					<p><?php echo get_the_date();?></p>
+					<div class="likely likely-small">
+					  <div class="twitter">t</div>
+					  <div class="facebook">f</div>
+					  <div class="vkontakte">vk</div>
+					  <div class="telegram">t</div>
+					  <div class="linkedin">l</div>
+					</div>
+				</div>
 			</div><!-- .post -->
 
 <?php if ( get_post_custom_values('comments') ) comments_template() // Add a key+value of "comments" to enable comments on this page ?>

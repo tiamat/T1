@@ -18,6 +18,8 @@
             window.onload = stchcol;
 			//-->
         </script>
+    <script src="/img/likely.js"></script>
+	<link rel="stylesheet" href="/img/likely.css">
 	<link rel="icon" href="/img/favicon.ico" />
 	<link rel="icon" href="/img/favicon.gif" type="image/gif" />
 	<title><?php wp_title( '-', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ) ?></title>
@@ -48,11 +50,12 @@
 		</div>
 		<div id="navigation_categories">		
 			<ul><?php wp_list_categories(array('show_count'=>0, 'title_li'=>'')); ?> </ul>
+			<ul><?php wp_list_pages(array('title_li'=>''))?></ul>
 		</div>
 		<?php get_sidebar(); ?>
 		<div id="credentials">
-			<p> Theme T1 (ver 0.6) was designed by Evzhenkov Svyatoslav, exclusively for <a href="http://tiamat.name">tiamat.name</a></p>
-			<p> No rights reserved. IE is not a browser.</p>
-			<p> 2009-2014. <a href="http://tiamat.name">tiamat.name.</a></p>
+			<p> Theme T1 (ver 0.7) was designed by Evzhenkov Svyatoslav, exclusively for <a href="http://tiamat.name">tiamat.name</a></p>
+			<p> No rights reserved</p>
+			<p> 2009-2017. <a href="http://tiamat.name">tiamat.name.</a></p>
 		</div>
 	</div>

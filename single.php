@@ -13,20 +13,15 @@
 <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sandbox' ) . '&after=</div>') ?>
 				</div>
 				<div class="entry-meta">
-					<?php printf( __( 'Categories: %6$s%7$s<br> ', 'sandbox' ),
-						'<span class="author vcard"><a class="url fn n" href="' . get_author_link( false, $authordata->ID, $authordata->user_nicename ) . '" title="' . sprintf( __( 'View all posts by %s', 'sandbox' ), $authordata->display_name ) . '">' . get_the_author() . '</a></span>',
-						get_the_time('Y-m-d'),
-						get_the_time('H:i:sO'),
-						the_date( '', '', '', false ),
-						get_the_time(),
-						get_the_category_list(', '),
-						get_the_tag_list( __( '<br> Tags: ', 'sandbox' ), ', ', '' ),
-						get_permalink(),
-						the_title_attribute('echo=0'),
-						comments_rss() ) ?>
-
-<?php /*edit_post_link( __( 'Edit', 'sandbox' ), "\n\t\t\t\t\t<span class=\"edit-link\">", "</span>" ) */?>
-
+					<p>Categories: <?php the_category(', ') ?></p>
+					<p><?php echo get_the_date();?></p>
+					<div class="likely likely-small">
+					  <div class="twitter">t</div>
+					  <div class="facebook">f</div>
+					  <div class="vkontakte">vk</div>
+					  <div class="telegram">t</div>
+					  <div class="linkedin">l</div>
+					</div>
 				</div>
 			</div><!-- .post -->
 
