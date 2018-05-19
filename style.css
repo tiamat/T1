@@ -23,10 +23,21 @@ strong, h4, h5, h6, b{ /*make them same as <p> element*/
 	font-weight: normal;
 }
 h1{
-	font-family:"Courier New", Courier, monospace;, Courier, monospace;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-weight:normal;
-	font-size: 24px;
+	font-size: 28px;
+	margin-left: 200px;
+	text-transform: capitalize;
 }
+
+.page-title{
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size: 36px;
+	margin-left: 200px;
+	text-transform: capitalize;
+}
+
 h2{
 	font-family:"Courier New", Courier, monospace;
 	font-size: 21px;
@@ -47,14 +58,12 @@ h3 + p{
 	margin-top: 1px;
 }
 
-blockquote{
-	border-left: 1px solid #000000;
-	padding-left: 10px;
-}
-
 img{
+	margin-left: auto;
+    margin-right: auto;
 	border: none;
-	max-width: 100%;
+	/*max-width: 100%;*/
+	display:block;
 }
 
 img.small{ /* small image or favicon */
@@ -62,6 +71,7 @@ img.small{ /* small image or favicon */
 	text-align:right;
 	margin: 10px 0px 10px 10px;
 	display: block;
+	border-radius: 8px;
 }
 img.fullcontext{
 	display: block;
@@ -69,6 +79,7 @@ img.fullcontext{
 	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 10px;
+	border-radius: 8px;
 }
 
 textarea, input{
@@ -82,28 +93,49 @@ table, th, td{
 	padding: 3px;
 }
 
+pre{
+	margin-left:200px;
+	padding-left: 20px;
+}
+
 #wrapper{
 	align:center;
+	text-align:center;
 	margin: 0px auto;
-	width: 820px;
-	
+	width: 1200px;
 }
 
 #navigation{
 	background-color:#ffffff;
-	width: 150px;
-	padding: 30px 10px 10px 10px;
+	width: 820px;
+	padding: 10px 10px 10px 10px;
 	text-align: center;
-	position:relative;
-	float:left;
+	margin-left: 200px;
 }
+
+#navigation_categories {
+	float: left;
+	width: 670px;
+	text-align: left;
+	padding-left: 20px;
+}
+
+.page-title {
+	margin-left: 200px;
+	font: courier 20px;
+
+}
+
 #navigation_categories ul, #navigation_categories li{
 	padding:0px;
 	margin:0px;
 	list-style-type: none;
 	list-style:none;
-	text-align: center;	
+	text-align: justify;	
 	margin-top: 3px;
+	margin-left: 5px;
+	display: inline-block;
+	text-transform: capitalize;
 }
 #navigation_categories a:link, #navigation_categories a:active, #navigation_categories a:visited {
 	/*display: block;*/
@@ -121,7 +153,7 @@ table, th, td{
 	position:relative;
 	float: left;
 	padding: 20px;
-	width: 600px;
+	width: 1200px;
 	text-align:left;
 }
 
@@ -137,12 +169,33 @@ table, th, td{
 	text-decoration: none;
 }
 
+#content blockquote {
+	display: block;
+	margin-left: 200px;
+	width: 800px;
+}
+
+#content blockquote p{
+	margin-left: 0px;
+	padding-left: 30px;
+	width: 770px;
+	font: 16px italic Arial;
+}
+
+#content ol, #content ul{
+	margin-left: 200px;
+	width: 770px;
+	display: block;
+}
+
 #credentials, #credentials a{
 	font-family: "Courier New", Courier, monospace;
 	font-size: 8px;
 	color: #555;
 	line-height: 9px;
-	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
 }
 
 #nav-above{
@@ -153,6 +206,7 @@ table, th, td{
 	width: 100px;
 	height: 90px;
 	margin-left: 25px;
+	float: left;
 }
 
 .cat-item{
@@ -168,16 +222,66 @@ table, th, td{
 	font-size: 10px;
 	line-height: 13px;
 	margin-bottom: 30px;
+	padding-right: 200px;
 }
 .entry-meta p{
 	margin: 0px 0px 3px 0px;
+	width: 800px;
+	margin-left: 200px;
 }
 .post-date {
 	color: #555;
 }
 .nav-previous {
 	float:left;
+	margin-left: 200px;
 }
 .nav-next {
 	float: right;
+	margin-right: 200px;
+}
+
+.entry-content p, #comments{
+	text-align: justify;
+	font-family: Arial;
+	font-size: 16px;
+	width: 800px;
+	display: block;
+	margin-left: 200px;
+	margin-right: 200px;
+
+}
+
+#likely{
+	width: 800px;
+	display: inline;
+}
+
+.entry-content img{
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 8px;
+}
+
+.entry-content img.x1200{
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: -200px;
+	border-radius: 8px;
+}
+
+.entry-content img.xwide{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 2400px;
+	margin-left: -800px;
+	display: block;
+	height: auto;
+	border-radius: 8px;
 }

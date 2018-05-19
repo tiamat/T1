@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes() ?>>
 <head profile="http://gmpg.org/xfn/11">
 	<script type="text/javascript">
@@ -29,9 +29,7 @@
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('rss2_url') ?>" title="<?php printf( __( '%s latest posts', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'sandbox' ), wp_specialchars( get_bloginfo('name'), 1 ) ) ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url') ?>" />
-	<link rel="openid.server" href="http://www.myopenid.com/server" />
-	<link rel="openid.delegate" href="http://T1amat.myopenid.com/" /> 
-	<meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=T1amat.myopenid.com" />
+	
 	
 
 </head>
@@ -49,13 +47,12 @@
 		<a href="http://tiamat.name" ><img src="/img/t1_x180_y80_transparent.png" alt="Main page"/></a>
 		</div>
 		<div id="navigation_categories">		
-			<ul><?php wp_list_categories(array('show_count'=>0, 'title_li'=>'')); ?> </ul>
-			<ul><?php wp_list_pages(array('title_li'=>''))?></ul>
+			<ul><?php wp_list_categories(array('show_count'=>0, 'title_li'=>'')); ?> 
+			<?php wp_list_pages(array('title_li'=>''))?></ul>
+			<div id="credentials">
+					<p> Theme T1 (ver 1.0) was designed by Evzhenkov Svyatoslav, exclusively for <a href="http://tiamat.name">tiamat.name</a> No rights reserved 2009-2019. </p>
+				</div>	
 		</div>
 		<?php get_sidebar(); ?>
-		<div id="credentials">
-			<p> Theme T1 (ver 0.7) was designed by Evzhenkov Svyatoslav, exclusively for <a href="http://tiamat.name">tiamat.name</a></p>
-			<p> No rights reserved</p>
-			<p> 2009-2017. <a href="http://tiamat.name">tiamat.name.</a></p>
-		</div>
+
 	</div>
