@@ -1,3 +1,3 @@
-	<div id="primary" class="sidebar">
-		
-	</div><!-- #primary .sidebar -->
+	<div id="primary" class="sidebar">
+		
+	</div><!-- #primary .sidebar -->

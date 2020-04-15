@@ -27,6 +27,7 @@ h1{
 	font-weight:normal;
 	font-size: 28px;
 	margin-left: 200px;
+	margin-right: 200px;
 	text-transform: capitalize;
 }
 
@@ -39,9 +40,12 @@ h1{
 }
 
 h2{
-	font-family:"Courier New", Courier, monospace;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size: 21px;
 	margin-bottom: 0px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 5px;
 	font-weight: normal;
 }
 h2 + p{
@@ -49,9 +53,10 @@ h2 + p{
 }
 
 h3{
-	font-family:"Courier New", Courier, monospace;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-size: 18px;
-	margin-bottom: 0px;
+	margin-bottom: 3px;
+	margin-left: 200px;
 	font-weight: normal;
 }
 h3 + p{
@@ -62,8 +67,15 @@ img{
 	margin-left: auto;
     margin-right: auto;
 	border: none;
-	/*max-width: 100%;*/
 	display:block;
+}
+
+figcaption{
+	font-family:georgia, serif;
+	font-style: italic;
+	margin-left: 200px;
+	margin-right: 200px;
+	text-align: center;
 }
 
 img.small{ /* small image or favicon */
@@ -115,7 +127,7 @@ pre{
 
 #navigation_categories {
 	float: left;
-	width: 670px;
+	width: 695px;
 	text-align: left;
 	padding-left: 20px;
 }
@@ -186,6 +198,7 @@ pre{
 	margin-left: 200px;
 	width: 770px;
 	display: block;
+	font-size: 18px;
 }
 
 #credentials, #credentials a{
@@ -205,7 +218,7 @@ pre{
 #t1_tl{
 	width: 100px;
 	height: 90px;
-	margin-left: 25px;
+	margin-left: -10px;
 	float: left;
 }
 
@@ -243,18 +256,29 @@ pre{
 
 .entry-content p, #comments{
 	text-align: justify;
-	font-family: Arial;
-	font-size: 16px;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 18px;
 	width: 800px;
 	display: block;
 	margin-left: 200px;
 	margin-right: 200px;
+	line-height: 1.4;
 
 }
 
 #likely{
 	width: 800px;
 	display: inline;
+}
+
+#disqus_thread {
+	margin-left:200px;
+	margin-right:200px;
+}
+
+.edit-link{
+	margin-left:200px;
+	margin-right:200px;
 }
 
 .entry-content img{
@@ -265,6 +289,7 @@ pre{
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .entry-content img.x1200{
@@ -274,14 +299,16 @@ pre{
 	margin-bottom: 10px;
 	margin-left: -200px;
 	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .entry-content img.xwide{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	width: 2400px;
-	margin-left: -800px;
+	margin-left: -820px;
 	display: block;
 	height: auto;
 	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
